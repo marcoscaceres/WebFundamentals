@@ -116,9 +116,9 @@ Michael van Ouwerkerk from the Chrome team also has a [six minute introduction](
 
 **Remember, your user experience can have different levels of sweetness depending on the browser being used to view your web app. You're in control of the hard candy shell.**
 
-Additional features coming to the web platform such as [Background Syncronisation](https://github.com/WICG/BackgroundSync/blob/master/explainer.md) (for data sync with a server even when your web app is closed) and [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) (for talking to Bluetooth devices from your web app) can also be layered into your Progressive Web App in this manner.
+You can also layer in to your progressive web app features coming to the web platform such as [background syncronisation](https://github.com/WICG/BackgroundSync/blob/master/explainer.md) (for syncing data with a server even when your web app is closed) and [web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) (for talking to Bluetooth devices from your web app).
 
-One-shot Background Sync has been [enabled](https://codereview.chromium.org/1514383002/) in Chrome and Jake Archibald has a [video](https://www.youtube.com/watch?v=wjUCXgM70c0) of his [Offline wikipedia app](https://github.com/jakearchibald/offline-wikipedia) and [article](https://developers.google.com/web/updates/2015/12/background-sync) demonstrating it in action. Francois Beaufort also has a number of [Web Bluetooth samples](https://googlechrome.github.io/samples/web-bluetooth/) available if interested in trying out that API.
+One-shot background sync has been [enabled](https://codereview.chromium.org/1514383002/) in Chrome and Jake Archibald has a [video](https://www.youtube.com/watch?v=wjUCXgM70c0) of his [offline wikipedia app](https://github.com/jakearchibald/offline-wikipedia) and [article](https://developers.google.com/web/updates/2015/12/background-sync) demonstrating it in action. Francois Beaufort also has a number of [web bluetooth samples](https://googlechrome.github.io/samples/web-bluetooth/) available if you're interested in trying out that API.
 
 ### Framework-friendly
 
