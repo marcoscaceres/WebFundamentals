@@ -62,19 +62,19 @@ For more details, read [Installable Web Apps with the WebApp Manifest in Chrome 
 
 ### Add to Home Screen Banner
 
-Chrome on Android has support adding in your site to the homescreen for a while now, but recent versions also support proactively suggesting sites be added using native [Web App install banners](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android?hl=en).
+Chrome on Android has supported adding in your site to the homescreen for a while now, but recent versions support proactively suggesting sites be added using native [Web App install banners](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android?hl=en).
 
 <img
 src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-2-@1x.jpg" alt="The voice memos demo application displaying a webapp install banner prompt in Chrome for Android"/>
 
-In order for the app install prompts to display your app must:
+For the app install prompts to display your app must:
 
-* Have a valid Web App manifest
+* Have a valid web app manifest
 * Be served over HTTPS (see [letsencrypt](https://letsencrypt.org/) for a free certificate)
-* Have a valid service worker registered
+* Have a valid service worker
 * Be visited twice, with at least 5 minutes between visits
 
-A number of [App Install banner samples](https://github.com/GoogleChrome/samples/tree/gh-pages/app-install-banner) are available, covering [basic banners](https://github.com/GoogleChrome/samples/tree/gh-pages/app-install-banner/basic-banner) through to more complex use-cases like displaying [related applications](https://github.com/GoogleChrome/samples/tree/gh-pages/app-install-banner/related-applications).
+A number of [App Install banner samples](https://github.com/GoogleChrome/samples/tree/gh-pages/app-install-banner) are available, covering [basic banners](https://github.com/GoogleChrome/samples/tree/gh-pages/app-install-banner/basic-banner) through to more complex use cases like displaying [related applications](https://github.com/GoogleChrome/samples/tree/gh-pages/app-install-banner/related-applications).
 
 ### Service Worker for offline caching
 
