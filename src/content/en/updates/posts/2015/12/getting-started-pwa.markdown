@@ -102,15 +102,15 @@ Chrome, Opera, and Firefox all service workers with Edge having positive public 
 
 > Push notifications allow your users to opt-in to timely updates from sites they love and allow you to effectively re-engage them with customized, engaging content.
 
-Effectively, you can build web apps that users can engage with outside of a tab. The browser can be closed and they don't even need to be actively using your web app to engage with your experience. The feature requires both service worker and a Web App manifest, building on some of the features summarised earlier.
+Effectively, you can build web apps that users can use outside of a tab. The browser can be closed and they don't even need to be actively using your web app to engage with your experience. The feature requires both service worker and a web app manifest, building on some of the features summarised earlier.
 
-The Push API is [implemented](https://www.chromestatus.com/features/5416033485586432) in Chrome, in development in Firefox and [under consideration](https://dev.windows.com/en-us/microsoft-edge/platform/status/pushapi) in Edge. There are no public signals from Safari about their intent to implement this feature just yet.
+The push API is [implemented](https://www.chromestatus.com/features/5416033485586432) in Chrome, in development in Firefox and [under consideration](https://dev.windows.com/en-us/microsoft-edge/platform/status/pushapi) in Edge. There are not yet any public signals from Safari about their intent to implement this feature.
 
-[Push Notifications on the Open Web](https://developers.google.com/web/updates/2015/03/push-notifications-on-the-open-web?hl=en) is a comprehensive intro to getting Push setup by Matt Gaunt and a [Push Notifications codelab](https://developers.google.com/web/fundamentals/getting-started/push-notifications/?hl=en) is also available on Web Fundamentals.
+[Push Notifications on the Open Web](https://developers.google.com/web/updates/2015/03/push-notifications-on-the-open-web?hl=en) is a comprehensive intro to getting push set up by Matt Gaunt and a [Push Notifications codelab](https://developers.google.com/web/fundamentals/getting-started/push-notifications/?hl=en) is also available on Web Fundamentals.
 
 <img src="/web/updates/images/2015/12/getting-started-pwa/pwa-push.jpg" style="width:300px" alt="Web push notification on the Facebook mobile site"/>
 
-Michael van Ouwerkerk from the Chrome team also has a [6 min intro](https://developers.google.com/web/shows/google-io/2015/push-notifications?hl=en) to Push if you're more video inclined.
+Michael van Ouwerkerk from the Chrome team also has a [six minute introduction](https://developers.google.com/web/shows/google-io/2015/push-notifications?hl=en) to push if you're more video-inclined.
 
 ### Layering in advanced features
 
