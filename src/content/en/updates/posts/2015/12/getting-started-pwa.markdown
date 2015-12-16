@@ -80,7 +80,7 @@ A number of [App Install banner samples](https://github.com/GoogleChrome/samples
 
 A [service worker](http://www.w3.org/TR/service-workers/) is a script that runs in the background, separate from your web page. It responds to events, including network requests made from pages it serves. A service worker has an intentionally short lifetime.
 
-It wakes up when it gets an event and runs only as long as it needs to process it. Service worker allows you to use the Cache API to cache resources and can be used to provide users with an offline experience.
+It wakes up when it gets an event and runs only as long as it needs to process it. A service worker allows you to use the Cache API to cache resources and can be used to provide users with an offline experience.
 
 Service workers are powerful for offline caching but they also offer significant performance wins in the form of instant loading for repeat visits to your site or web app. You can cache your application shell so it works offline and populate its content using JavaScript.
 
@@ -89,14 +89,14 @@ src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-3-@1x.jpg" alt=
 
 A comprehensive set of [service worker samples](https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker) are available over on Google Chrome samples. Jake Archibald's [offline cookbook](https://jakearchibald.com/2014/offline-cookbook/) is a must-read and I highly recommend trying out Paul Kinlan's [your first offline web app](https://developers.google.com/web/fundamentals/getting-started/your-first-offline-web-app/) walkthrough if new to service worker.
 
-Our team also maintain a number of Service Worker helper utilities and build tools that we find useful for reducing the overhead in getting Service Worker setup. They're listed over on [Service Worker Libraries](https://developers.google.com/web/tools/service-worker-libraries/). The two main ones are:
+Our team also maintains a number of Service Worker helper utilities and build tools that we find useful for reducing the overhead in getting Service Worker setup. They're listed over on [Service Worker Libraries](https://developers.google.com/web/tools/service-worker-libraries/). The two main ones are:
 
-* [sw-precache](https://github.com/GoogleChrome/sw-precache/): a build-time tool that generates a service worker script useful for precaching your web app shell
+* [sw-precache](https://github.com/GoogleChrome/sw-precache/): a build-time tool that generates a service worker script, useful for precaching your web app shell
 * [sw-toolbox](https://github.com/GoogleChrome/sw-toolbox): a library providing runtime caching for infrequently used resources
 
 Jeff Posnick wrote a quick primer on sw-precache called [Offline-first, fast, with the sw-precache module](https://developers.google.com/web/updates/2015/02/offline-first-with-sw-precache?hl=en) and a [codelab](https://www.code-labs.io/codelabs/sw-precache/index.html) on the same tool that you might find useful.
 
-Chrome, Opera and Firefox have all implemented support for Service Worker with Edge having positive public signals about interest in the feature. Safari briefly mentioned interest in it via one engineer's proposed [five year plan](https://trac.webkit.org/wiki/FiveYearPlanFall2015).
+Chrome, Opera, and Firefox all service workers with Edge having positive public signals about interest in the feature. Safari briefly mentioned interest in it via one engineer's proposed [five year plan](https://trac.webkit.org/wiki/FiveYearPlanFall2015).
 
 ### Push Notifications for re-engagement
 
