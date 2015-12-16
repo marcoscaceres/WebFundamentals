@@ -24,20 +24,20 @@ There's been much welcome discussion about [Progressive Web Apps](https://infreq
 
 Aaron Gustafson likened [progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement) to a peanut M&M. The peanut is your content, the chocolate coating is your presentation layer and your JavaScript is the hard candy shell. This layer can vary in color and the exerience can vary depending on the capabilities of the browser using it.
 
-Think of the candy shell as where many Progressive Web App features can live. As users build a relationship with these apps through repeated use, they make the candy shell even sweeter - loading fast on slow network connections (thanks to [Service Worker](http://www.html5rocks.com/en/tutorials/service-worker/introduction/)), sending relevant [push notifications](https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/) and adding a first-class icon to the user's homescreen that can load them as fullscreen app experiences. Progressive Web Apps can also take advantage of smart [web app install banners](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android).
+Think of the candy shell as where many Progressive Web App features can live. As users build a relationship with these apps through repeated use, they make the candy shell even sweeter - loading fast on slow network connections (thanks to [service worker](http://www.html5rocks.com/en/tutorials/service-worker/introduction/)), sending relevant [push notifications](https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/) and adding a first-class icon to the user's homescreen that can load them as fullscreen app experiences. Progressive Web Apps can also take advantage of smart [web app install banners](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android).
 
 <img
 src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-0-@1x.jpg" alt="Web app install banners for engagement, launch from the user's homescreen, splash screen in Chrome for Android, works offline with Service Worker"/>
 
-Progressive Web Apps aren't unique to Chrome for Android. Below we can see the [Pokedex](https://pokedex.org) Progressive Web App working in Firefox for Android (Beta) with early Add to Homescreen and Service Worker caching features.
+Progressive Web Apps aren't unique to Chrome for Android. Below we can see the [Pokedex](https://pokedex.org) Progressive Web App working in Firefox for Android (Beta) with early Add to Homescreen and service worker caching features.
 
 <img
-src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-ff-@1x.jpg" alt="Progressive web apps working in Firefox for Android"/>
+src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-ff-@1x.jpg" alt="Progressive Web Apps working in Firefox for Android"/>
 
 One of the nice aspects of the "progressive" nature to this model is that features can be gradually unlocked as browser vendors ship better support for them. Progressive Web Apps such as Pokedex also work great in Opera on Android with a few [notable](http://www.brucelawson.co.uk/2015/progressive-web-apps-ready-for-primetime/) differences in implementation:
 
 <img
-src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-6-@1x.jpg" alt="Progressive web apps working in Opera for Android"/>
+src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-6-@1x.jpg" alt="Progressive Web Apps working in Opera for Android"/>
 
 For diving deeper into Progressive Web Apps, read Alex Russell's original [blog post](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) introducing them. Paul Kinlan also started a [Stack Overflow tag](http://stackoverflow.com/tags/progressive-web-apps/info) for Progressive Web Apps that is worth checking out.
 
@@ -52,9 +52,9 @@ The manifest enables your web app to have a more native-like presence on the use
 <img
 src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-1-@1x.jpg" alt="Add to homescreen, launch from homescreen and full-screen app-like experiences."/>
 
-The [Web Starter Kit](https://github.com/google/web-starter-kit/blob/master/app/manifest.json) and the [Google Chrome samples](https://github.com/GoogleChrome/samples/tree/0768ee71e4548f779219798d8c83fdcc67b469e8/web-application-manifest) both contain sample manifests. Bruce Lawson wrote a [Manifest Generator](http://brucelawson.github.io/manifest/) and Mounir Lamouri wrote a handy [Web Manifest validator](https://mounirlamouri.github.io/manifest-validator/). Both are worth checking out.
+The [Web Starter Kit](https://github.com/google/web-starter-kit/blob/master/app/manifest.json) and the [Google Chrome samples](https://github.com/GoogleChrome/samples/tree/0768ee71e4548f779219798d8c83fdcc67b469e8/web-application-manifest) both contain sample manifests. Bruce Lawson wrote a [manifest generator](http://brucelawson.github.io/manifest/) and Mounir Lamouri wrote a handy [web manifest validator](https://mounirlamouri.github.io/manifest-validator/). Both are worth checking out.
 
-In my personal projects, I rely on [realfavicongenerator](http://realfavicongenerator.net/) to generate the correctly sized icons for both the Web App manifest and for use across iOS, desktop and so on. The [favicons](https://github.com/haydenbleasel/favicons) Node module is also able to achieve a similar output as part of your build process.
+In my personal projects, I rely on [realfavicongenerator](http://realfavicongenerator.net/) to generate the correctly sized icons for both the web app manifest and for use across iOS, desktop and so on. The [favicons](https://github.com/haydenbleasel/favicons) Node module is also able to achieve a similar output as part of your build process.
 
 Chromium-based browsers (Chrome, Opera etc.) [support](https://www.chromestatus.com/feature/6488656873259008) web app manifests today with Firefox actively developing support and Edge listing them as [under consideration](https://dev.windows.com/en-us/microsoft-edge/platform/status/webapplicationmanifest). WebKit/Safari have not yet posted public signals about their intents to implement the feature.
 
@@ -89,7 +89,7 @@ src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-3-@1x.jpg" alt=
 
 A comprehensive set of [service worker samples](https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker) are available over on Google Chrome samples. Jake Archibald's [offline cookbook](https://jakearchibald.com/2014/offline-cookbook/) is a must-read and I highly recommend trying out Paul Kinlan's [your first offline web app](https://developers.google.com/web/fundamentals/getting-started/your-first-offline-web-app/) walkthrough if new to service worker.
 
-Our team also maintains a number of Service Worker helper utilities and build tools that we find useful for reducing the overhead in getting Service Worker setup. They're listed over on [Service Worker Libraries](https://developers.google.com/web/tools/service-worker-libraries/). The two main ones are:
+Our team also maintains a number of service worker helper utilities and build tools that we find useful for reducing the overhead in getting service worker setup. They're listed over on [Service Worker Libraries](https://developers.google.com/web/tools/service-worker-libraries/). The two main ones are:
 
 * [sw-precache](https://github.com/GoogleChrome/sw-precache/): a build-time tool that generates a service worker script, useful for precaching your web app shell
 * [sw-toolbox](https://github.com/GoogleChrome/sw-toolbox): a library providing runtime caching for infrequently used resources
@@ -116,7 +116,7 @@ Michael van Ouwerkerk from the Chrome team also has a [six minute introduction](
 
 **Remember, your user experience can have different levels of sweetness depending on the browser being used to view your web app. You're in control of the hard candy shell.**
 
-You can also layer in to your progressive web app features coming to the web platform such as [background syncronisation](https://github.com/WICG/BackgroundSync/blob/master/explainer.md) (for syncing data with a server even when your web app is closed) and [web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) (for talking to Bluetooth devices from your web app).
+You can also layer in to your Progressive Web App features coming to the web platform such as [background syncronisation](https://github.com/WICG/BackgroundSync/blob/master/explainer.md) (for syncing data with a server even when your web app is closed) and [web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) (for talking to Bluetooth devices from your web app).
 
 One-shot background sync has been [enabled](https://codereview.chromium.org/1514383002/) in Chrome and Jake Archibald has a [video](https://www.youtube.com/watch?v=wjUCXgM70c0) of his [offline wikipedia app](https://github.com/jakearchibald/offline-wikipedia) and [article](https://developers.google.com/web/updates/2015/12/background-sync) demonstrating it in action. Francois Beaufort also has a number of [web bluetooth samples](https://googlechrome.github.io/samples/web-bluetooth/) available if you're interested in trying out that API.
 
@@ -158,11 +158,11 @@ The official starting point for [Polymer](https://polymer-project.org) web apps 
 
 * Web application manifest
 * Chrome for Android splashscreen
-* Service Worker offline caching with the [Platinum SW elements](https://elements.polymer-project.org/elements/platinum-sw)
+* Service worker offline caching with the [Platinum SW elements](https://elements.polymer-project.org/elements/platinum-sw)
 * Push notifications (manual setup required) with the [Platinum Push elements](https://elements.polymer-project.org/elements/platinum-push-messaging)
 
 <img
-src="/web/updates/images/2015/12/getting-started-pwa/pwa-polymer-starter-kit-@1x.jpg" alt="Polymer starter kit displaying progressive web app features built in"/>
+src="/web/updates/images/2015/12/getting-started-pwa/pwa-polymer-starter-kit-@1x.jpg" alt="Polymer starter kit displaying Progressive Web App features built in"/>
 
 The current version of PSK is missing support for some of the more advanced performance patterns (e.g Application Shell model, async loading) you find in some Progressive Polymer web apps.
 
@@ -185,7 +185,7 @@ If you have a preference for working with vanilla JS/ES2015 and are unable to us
 A number of open-source Progressive Web Apps have already been built by members of the community both with and without JS libraries and frameworks. If you're looking for inspiration, the below repos might prove useful as reference. They're also just pretty darn good apps.
 
 <img
-src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-5-@1x.jpg" alt="Progressive web apps implemented using React, Polymer, Virtual DOM and AngularJS"/>
+src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-5-@1x.jpg" alt="Progressive Web Apps implemented using React, Polymer, Virtual DOM and AngularJS"/>
 
 ### Vanilla JS
 
@@ -204,7 +204,7 @@ src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-5-@1x.jpg" alt=
 
 ### Virtual-DOM
 
-* [Pokedex](https://github.com/nolanlawson/pokedex.org) by Nolan Lawson - excellent progressive web app applying a "do everything in a web worker" approach to help with progressive rendering. ([write-up](http://www.pocketjavascript.com/blog/2015/11/23/introducing-pokedex-org))
+* [Pokedex](https://github.com/nolanlawson/pokedex.org) by Nolan Lawson - excellent progressive Web app Applying a "do everything in a web worker" approach to help with progressive rendering. ([write-up](http://www.pocketjavascript.com/blog/2015/11/23/introducing-pokedex-org))
 
 ### Angular.js
 
