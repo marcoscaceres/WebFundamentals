@@ -122,21 +122,21 @@ One-shot background sync has been [enabled](https://codereview.chromium.org/1514
 
 ### Framework-friendly
 
-There's really nothing stopping you from applying any of the above principles to an existing application or framework you're building with. A few other principles worth keeping in mind while building your Progressive Web App are the [RAIL](https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/rail?hl=en) user-centric performance model and [FLIP](https://aerotwist.com/blog/flip-your-animations/) based animations.
+There's nothing stopping you from applying any of the above principles to an existing application or framework you're building with. A few other principles worth keeping in mind while building your Progressive Web App are the [RAIL](https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/rail?hl=en) user-centric performance model and [FLIP](https://aerotwist.com/blog/flip-your-animations/) based animations.
 
-I'm hopeful that during 2016, we'll see an increasing number of boilerplates and seed projects organically baking in support for Progressive Web Apps as a first-class citizen. Until then, the barrier to adding these features to your own apps isn't very high and are imo, quite worth the effort.
+I'm hopeful that during 2016, we'll see an increasing number of boilerplates and seed projects organically baking in support for Progressive Web Apps as a first-class citizen. Until then, the barrier to adding these features to your own apps isn't very high and are in my opinion, quite worth the effort.
 
 ## Architecture
 
-There are different levels of how "all-in" one goes on the Progressive Web App model, but one common approach taken is architecting them around an Application Shell. This is not a hard requirement, but does come with several benefits.
+There are different levels of how "all-in" one goes on the Progressive Web App model, but one common approach is architecting them around an application shell. This is not a hard requirement and comes with several benefits.
 
-The [Application Shell architecture](https://medium.com/google-developers/instant-loading-web-apps-with-an-application-shell-architecture-7c0c2f10c73#.1s0o3w42k) encourages caching your application shell (the User Interface) so it works offline and populate its content using JavaScript. On repeat visits, this allows you to get meaningful pixels on the screen really fast without the network, even if your content eventually comes from there. This comes with significant performance gains.
+The [application shell architecture](https://medium.com/google-developers/instant-loading-web-apps-with-an-application-shell-architecture-7c0c2f10c73#.1s0o3w42k) encourages caching your application shell (the user interface) so that it works offline and populating its content using JavaScript. On repeat visits, this allows you to get meaningful pixels on the screen really fast without the network, even if your content eventually comes from there. This comes with significant performance gains.
 
 <img src="/web/updates/images/2015/12/getting-started-pwa/pwa-application-shell.jpg" alt="The application shell being visualised as breaking down the UI of your app, such as the drawer and the main content area"/>
 
 Jeremy Keith recently [commented](https://adactio.com/journal/9963) that in this type of model perhaps server-side rendering should not be viewed as a fallback but client-side rendering should be looked at as an enhancement. This is fair feedback.
 
-**In the Application Shell model, server-side rendering should be used as much as possible and client-side progressive rendering should be used as an enhancement in the same way that we "enhance" the experience when service worker is supported.** There are many ways this can ultimately be approached.
+**In the application shell model, server-side rendering should be used as much as possible and client-side progressive rendering should be used as an enhancement in the same way that we "enhance" the experience when service worker is supported.** There are many ways this can ultimately be approached.
 
 My recommendation is reading our write-up on the architecture and evaluating how similar principles could be best applied to your own application and stack.
 
@@ -148,7 +148,7 @@ My recommendation is reading our write-up on the architecture and evaluating how
 
 The `app-shell` repository contains a near-complete implementation of the [Application Shell architecture](https://medium.com/google-developers/instant-loading-web-apps-with-an-application-shell-architecture-7c0c2f10c73#.1s0o3w42k). It has a backend written in [Express.js](http://expressjs.com/en/index.html) and a front-end written in ES2015.
 
-Given that it covers both client and server-side portions of the model and there's quite a lot going on there, it will take some time to familiarise yourself with the codebase. It's otherwise our most comprehensive Progressive Web App starting point right now. Docs will be our next focus for this project.
+Given that it covers both client and server-side portions of the model and there's quite a lot going on there, it will take some time to familiarise yourself with the codebase. It's currently our most comprehensive Progressive Web App starting point. Docs will be our next focus for this project.
 
 ### Polymer Starter Kit
 
@@ -156,10 +156,10 @@ Given that it covers both client and server-side portions of the model and there
 
 The official starting point for [Polymer](https://polymer-project.org) web apps supports the following Progressive Web App features:
 
-* Web Application manifest
-* Chrome for Android Splashscreen
+* Web application manifest
+* Chrome for Android splashscreen
 * Service Worker offline caching with the [Platinum SW elements](https://elements.polymer-project.org/elements/platinum-sw)
-* Push Notifications (manual setup required) with the [Platinum Push elements](https://elements.polymer-project.org/elements/platinum-push-messaging)
+* Push notifications (manual setup required) with the [Platinum Push elements](https://elements.polymer-project.org/elements/platinum-push-messaging)
 
 <img
 src="/web/updates/images/2015/12/getting-started-pwa/pwa-polymer-starter-kit-@1x.jpg" alt="Polymer starter kit displaying progressive web app features built in"/>
@@ -174,15 +174,15 @@ We aim to try baking these patterns into PSK in 2016, but early experiments arou
 
 Our opinionated starting point for new vanilla projects includes the following Progressive Web App features:
 
-* Web Application manifest
-* Chrome for Android Splashscreen
-* Service-worker pre-caching thanks to [sw-precache](https://github.com/GoogleChrome/sw-precache/)
+* Web application manifest
+* Chrome for Android splashscreen
+* Service worker pre-caching thanks to [sw-precache](https://github.com/GoogleChrome/sw-precache/)
 
 If you have a preference for working with vanilla JS/ES2015 and are unable to use Polymer, Web Starter Kit may prove useful as a reference point you can reuse or steal code snippets from.
 
 ## Progressive Web Apps with and without frameworks
 
-A number of open-source Progressive Web Apps have already been built by members of the community both with and without JS libraries and frameworks. If you're looking for inspiration, the below repos might prove useful as reference. They're also just pretty damn good apps.
+A number of open-source Progressive Web Apps have already been built by members of the community both with and without JS libraries and frameworks. If you're looking for inspiration, the below repos might prove useful as reference. They're also just pretty darn good apps.
 
 <img
 src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-5-@1x.jpg" alt="Progressive web apps implemented using React, Polymer, Virtual DOM and AngularJS"/>
@@ -214,7 +214,7 @@ src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-5-@1x.jpg" alt=
 
 As mentioned, Progressive Web Apps are still in their infancy but it's an exciting time to play around with the methodologies behind them and see how well they can apply to your own web apps.
 
-Paul Kinlan is currently [planning](https://github.com/google/WebFundamentals/issues/2320) out the Web Fundamentals guidance on Progressive Web Apps and if you have input on areas you would like to see covered, please feel free to comment on-thread.
+Paul Kinlan is currently [planning](https://github.com/google/WebFundamentals/issues/2320) the Web Fundamentals guidance on Progressive Web Apps and if you have input on areas you would like to see covered, please feel free to comment on-thread.
 
 ## Further reading
 
