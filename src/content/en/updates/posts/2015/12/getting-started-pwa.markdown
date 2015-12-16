@@ -146,7 +146,7 @@ My recommendation is reading our write-up on the architecture and evaluating how
 
 [View on GitHub](https://github.com/addyosmani/app-shell)
 
-The `app-shell` repository contains a near-complete implementation of the [Application Shell architecture](https://medium.com/google-developers/instant-loading-web-apps-with-an-application-shell-architecture-7c0c2f10c73#.1s0o3w42k). It has a backend written in [Express.js](http://expressjs.com/en/index.html) and a front-end written in ES2015.
+The `app-shell` repository contains a near-complete implementation of the [application shell architecture](https://medium.com/google-developers/instant-loading-web-apps-with-an-application-shell-architecture-7c0c2f10c73#.1s0o3w42k). It has a backend written in [Express.js](http://expressjs.com/en/index.html) and a front-end written in ES2015.
 
 Given that it covers both client and server-side portions of the model and there's quite a lot going on there, it will take some time to familiarise yourself with the codebase. It's currently our most comprehensive Progressive Web App starting point. Docs will be our next focus for this project.
 
@@ -164,7 +164,7 @@ The official starting point for [Polymer](https://polymer-project.org) web apps 
 <img
 src="/web/updates/images/2015/12/getting-started-pwa/pwa-polymer-starter-kit-@1x.jpg" alt="Polymer starter kit displaying Progressive Web App features built in"/>
 
-The current version of PSK is missing support for some of the more advanced performance patterns (e.g Application Shell model, async loading) you find in some Progressive Polymer web apps.
+The current version of PSK is missing support for some of the more advanced performance patterns (e.g application shell model, async loading) you find in some Progressive Polymer web apps.
 
 We aim to try baking these patterns into PSK in 2016, but early experiments around this can be found in the Polymer [Zuperkulblog](https://github.com/PolymerLabs/zuperkulblog-progressive) app by Rob Dodson and the excellent [Polymer Perf Patterns](https://www.youtube.com/watch?v=Yr84DpNaMfk) talk by Eric Bidelman.
 
