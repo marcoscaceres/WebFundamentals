@@ -13,34 +13,33 @@ description: "Learn how to get started building Progressive Web Apps"
 featured_image: /web/updates/images/2015/12/getting-started-pwa/pwa-general-0-@1x.jpg
 ---
 
-There's been much welcome discussion about [Progressive Web Apps](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) lately. They're still a relatively new model, but their principles can equally enhance apps built with vanilla JS, React, Polymer, Angular or any other framework. In this post, I'll summarise some options and reference apps for getting started with your own PWApp today.
+There's been much welcome discussion about [Progressive Web Apps](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) lately. They're still a relatively new model, but their principles can equally enhance apps built with vanilla JS, React, Polymer, Angular or any other framework. In this post, I'll summarise some options and reference apps for getting started with your own Progressive Web App today.
 
 
 ## What is a Progressive Web App?
 
 > A Progressive Web App provides a native app-like user experience that is low friction and is built using modern web capabilities. Progressive Web Apps are hosted on the web and can progressively become an app on the user's device over time.
 
-**It's important to remember that Progressive Web Apps work everywhere but are supercharged in modern browsers. Progressive enhancement is a backbone of the model**.
+**It's important to remember that Progressive Web Apps work everywhere but are supercharged in modern browsers. Progressive enhancement is the model's backbone**.
 
 Aaron Gustafson likened [progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement) to a peanut M&M. The peanut is your content, the chocolate coating is your presentation layer and your JavaScript is the hard candy shell. This layer can vary in color and the exerience can vary depending on the capabilities of the browser using it.
 
-Think of the candy shell as where many Progressive Web App features can live.
-As the user builds a relationship with these apps through repeat use, they make the candy shell even sweeter - loading very fast on slow network connections (thanks to [Service Worker](http://www.html5rocks.com/en/tutorials/service-worker/introduction/)), sending relevant [Push Notifications](https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/) and having a first-class icon on the user's homescreen that can load them as fullscreen app experiences. They can also take advantage of smart [web app install banners](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android).
+Think of the candy shell as where many Progressive Web App features can live. As users build a relationship with these apps through repeated use, they make the candy shell even sweeter - loading fast on slow network connections (thanks to [Service Worker](http://www.html5rocks.com/en/tutorials/service-worker/introduction/)), sending relevant [push notifications](https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/) and adding a first-class icon to the user's homescreen that can load them as fullscreen app experiences. Progressive Web Apps can also take advantage of smart [web app install banners](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android).
 
 <img
 src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-0-@1x.jpg" alt="Web app install banners for engagement, launch from the user's homescreen, splash screen in Chrome for Android, works offline with Service Worker"/>
 
-Progressive Web Apps aren't unique to Chrome for Android. Below we can see the [Pokedex](https://pokedex.org) Progressive Web App working in Firefox for Android (Beta) with early Add to Homescreen and Service Worker caching features running just fine.
+Progressive Web Apps aren't unique to Chrome for Android. Below we can see the [Pokedex](https://pokedex.org) Progressive Web App working in Firefox for Android (Beta) with early Add to Homescreen and Service Worker caching features.
 
 <img
 src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-ff-@1x.jpg" alt="Progressive web apps working in Firefox for Android"/>
 
-One of the nice aspects of the "progressive" nature to this model is that features can be gradually unlocked as browser vendors ship better support for them. Progressive Web Apps such as Pokedex also of course work great in Opera on Android too with a few [notable](http://www.brucelawson.co.uk/2015/progressive-web-apps-ready-for-primetime/) differences in implementation:
+One of the nice aspects of the "progressive" nature to this model is that features can be gradually unlocked as browser vendors ship better support for them. Progressive Web Apps such as Pokedex also work great in Opera on Android with a few [notable](http://www.brucelawson.co.uk/2015/progressive-web-apps-ready-for-primetime/) differences in implementation:
 
 <img
 src="/web/updates/images/2015/12/getting-started-pwa/pwa-general-6-@1x.jpg" alt="Progressive web apps working in Opera for Android"/>
 
-For diving deeper into Progressive Web Apps, read Alex Russell's original [blog post](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) introducing them. Paul Kinlan also started a very useful [Stack Overflow tag](http://stackoverflow.com/tags/progressive-web-apps/info) for Progressive Web Apps worth checking out.
+For diving deeper into Progressive Web Apps, read Alex Russell's original [blog post](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) introducing them. Paul Kinlan also started a [Stack Overflow tag](http://stackoverflow.com/tags/progressive-web-apps/info) for Progressive Web Apps that is worth checking out.
 
 ## Principles
 
